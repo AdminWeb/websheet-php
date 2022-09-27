@@ -1,6 +1,6 @@
 {
-    "name": "adminweb/pdf-sdk",
-    "version": "1.0.0",
+    "name": "adminweb/websheet-php",
+    "version": "1.0.1",
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.5"
