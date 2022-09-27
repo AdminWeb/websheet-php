@@ -28,7 +28,7 @@ class Pdf
      * @param string $id
      * @return $this
      */
-    public function setTemplate(string $id)
+    public function setTemplate(string $id): Pdf
     {
         $this->templateEmailId = $id;
         return $this;
@@ -38,7 +38,7 @@ class Pdf
      * @param string $email Email of destinatary for receive the pdf file on email
      * @return $this
      */
-    public function setDestinatary(string $email)
+    public function setDestinatary(string $email): Pdf
     {
         $this->to = $email;
         return $this;
@@ -48,8 +48,8 @@ class Pdf
      * Generate PDF file in html
      * @param string $name Name of PDF file
      * @param string $content Content HTML of PDF file.
-     * @return \Adminweb\Sdk\PdfResult
-     * @throws \Adminweb\Sdk\Exception\PdfException
+     * @return \WebSheet\Sdk\PdfResult
+     * @throws \WebSheet\Sdk\Exception\PdfException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function make(string $name, string $content): PdfResult
