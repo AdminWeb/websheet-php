@@ -1,6 +1,6 @@
 {
     "name": "adminweb/websheet-php",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "proprietary",
     "description": "Websheet Sdk for generate pdf and send it for email.",
     "type": "library",
