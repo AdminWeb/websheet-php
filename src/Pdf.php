@@ -1,9 +1,9 @@
 <?php
 
-namespace Adminweb\Sdk;
+namespace WebSheet\Sdk;
 
 use GuzzleHttp\Client;
-use Adminweb\Sdk\Exception\PdfException;
+use WebSheet\Sdk\Exception\PdfException;
 
 /**
  * Class Pdf generator for PDF

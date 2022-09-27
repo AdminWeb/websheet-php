@@ -1,6 +1,10 @@
 <?php
 
+namespace WebSheetTest\Sdk;
+
+use Mockery;
 use PHPUnit\Framework\TestCase;
+
 class PdfTest extends TestCase
 {
     /**
@@ -12,9 +16,9 @@ class PdfTest extends TestCase
         $name = 'pdfFile.pdf';
         $htmlContent = '<h1>Pdf Title</h1>';
         
-        $apiMock = Mockery::mock(\Adminweb\Sdk\Pdf::class,['api-key'])
+        $apiMock = Mockery::mock(\WebSheet\Sdk\Pdf::class,['api-key'])
             ->shouldReceive('make')
-            ->andReturn(\Adminweb\Sdk\PdfResult::fromArray([
+            ->andReturn(\WebSheet\Sdk\PdfResult::fromArray([
                 'id'=>'1',
                 'name'=>'pdf file',
                 'url'=>'https://www.example.com/file.pdf',
@@ -24,7 +28,7 @@ class PdfTest extends TestCase
         
         $result = $apiMock->make(name: $name, content: $htmlContent);
         
-        $this->assertInstanceOf(\Adminweb\Sdk\PdfResult::class, $result);
+        $this->assertInstanceOf(\WebSheet\Sdk\PdfResult::class, $result);
         
     }
 }

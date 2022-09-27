@@ -1,5 +1,6 @@
-AW WebSheet SDK
+WebSheet SDK
 ==========
+[![PHP Composer](https://github.com/AdminWeb/websheet-php/actions/workflows/php.yml/badge.svg)](https://github.com/AdminWeb/websheet-php/actions/workflows/php.yml)
 
 This package software allow generates pdf (and send it by email) using our services with content in HTML.
 

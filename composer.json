@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Adminweb\\Sdk\\": "src/"
+            "WebSheet\\Sdk\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AdminwebTest\\Sdk\\": "tests/"
+            "WebSheetTest\\Sdk\\": "tests/"
         }
     },
     "authors": [
