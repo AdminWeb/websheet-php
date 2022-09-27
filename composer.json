@@ -1,6 +1,17 @@
 {
     "name": "adminweb/websheet-php",
     "version": "1.0.2",
+    "license": "proprietary",
+    "type": "library",
+    "keywords": [
+        "pdf",
+        "email",
+        "api"
+    ],
+    "homepage": "https://www.websheet.tech/",
+    "readme": "Readme.md",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.5"
