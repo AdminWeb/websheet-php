@@ -22,7 +22,7 @@ Creates an API Key on https://www.websheet.tech. (No credit card need)
 <?php
 
 require 'vendor/autoload.php';
-use Adminweb\Sdk\Pdf;
+use WebSheet\Sdk\Pdf;
 
 $pdf = new Pdf('api-key');
 
@@ -54,7 +54,7 @@ echo $result->createdAt->format('d/m/Y ');
 <?php
 
 require 'vendor/autoload.php';
-use Adminweb\Sdk\Pdf;
+use WebSheet\Sdk\Pdf;
 
 $pdf = new Pdf('api-key');
 
@@ -81,7 +81,7 @@ $result = $pdf->setDestinatary('bob@example.com')->make('almost finalizado', $co
 <?php
 
 require 'vendor/autoload.php';
-use Adminweb\Sdk\Pdf;
+use WebSheet\Sdk\Pdf;
 
 $pdf = new Pdf('api-key');
 
