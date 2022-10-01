@@ -61,7 +61,7 @@ class Pdf
                     'Accept' => 'application/json',
                     'Content-Type' => 'application/json',
                     'x-api-key' => $this->key,
-                    'User-Agent' => 'AW-SDK/1.0 (WebSheet)'
+                    'User-Agent' => 'AW-SDK/1.0 (WebSheet-PHP)'
                 ]
             ]);
             $response = $client->request('POST', '/pdf', [
